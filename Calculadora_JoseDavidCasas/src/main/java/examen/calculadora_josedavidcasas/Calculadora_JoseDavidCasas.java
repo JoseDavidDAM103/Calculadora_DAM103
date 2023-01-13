@@ -11,7 +11,7 @@ public class Calculadora_JoseDavidCasas {
     
     static Scanner scanner = new Scanner(System.in);
     static int opcion = -1; //opción del menú
-    static int numero1 = 0, numero2 = 0; //Variables de entrada
+    static float numero1 = 0, numero2 = 0; //Variables de entrada
 
     public static void main(String[] args) {
         System.out.println("Bienvenido a la calculadora de Jose David");
@@ -61,10 +61,10 @@ public class Calculadora_JoseDavidCasas {
     //Método para recoger las variables de entrada
     public static void pideNumeros() {
         System.out.println("Introduce el primer número:");
-        numero1 = Integer.parseInt(scanner.nextLine());
+        numero1 = Integer.parseFloat(scanner.nextLine());
 
         System.out.println("Introduce el segundo número:");
-        numero2 = Integer.parseInt(scanner.nextLine());
+        numero2 = Integer.parseFloat(scanner.nextLine());
 
     }
 }
